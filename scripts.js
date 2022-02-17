@@ -102,7 +102,7 @@ const Modal = {
             </td>      
         `
 
-        return html
+        return html 
     },
 
     updateBalance() {
@@ -124,10 +124,12 @@ const Modal = {
 
 
   const Utils = {
-      formatAmount(value){
-        value = Number(value) * 100
+    formatAmount(value){
+      value = Number(value.replace(/\,\./g, "")) * 100
+      
+      return value
 
-        return value
+
 
       },
 
