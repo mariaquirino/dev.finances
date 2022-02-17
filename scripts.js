@@ -87,7 +87,7 @@ const Modal = {
 
         },
 
-    innerHTMLTransaction(transaction, index) {
+    innerHTMLTransaction(transaction, index) { 
         const CSSclass = transaction.amount > 0 ? "income" : "expense"
         
         const amount = Utils.formatCurrency(transaction.amount)
